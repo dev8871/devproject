@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Indore Gaming Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=PT+Sans&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Open+Sans:ital,wght@0,400;1,300&family=PT+Sans&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css"> 
+</head>
+<body>
+    <div id="page">
+        <input type="checkbox" id="check">
+        <header>
+            <img src="images/240473418_4461164437276793_1557724168675133012_n.jpg" class="girl" width="60" height="60">
+            <div class="newhead">
+                <h1 >Gaming Club <span id="iit">IIT Indore</span></h1>
+                <div class="newheadimg">
+                    <label for="check">
+                        <a class="menubar"><img src="images/menu-30.png" width="40px" height="40px"></a>
+                        <a class="close"><img src="images/x.png" width="35px" height="35px"></a>
+                    </label>
+                    
+                </div>
+                    
+            </div>
+            <div class="navigation">
+                <a href="#" class="menu">Home</a>
+                <a href="#" class="menu">About</a>
+                <a href="#" class="menu">Contact</a>
+                <a href="#" class="menu">Sponsor us</a>
+            </div>
+            
+        </header>
+        <main>
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio buttons start -->
+                    <input type="radio" name="radiobtn" id="radio1">
+                    <input type="radio" name="radiobtn" id="radio2">
+                    <input type="radio" name="radiobtn" id="radio3">
+                    <input type="radio" name="radiobtn" id="radio4">
+                    <input type="radio" name="radiobtn" id="radio5">
+                    <!-- radio buttons end -->
+                    <!-- slide images start -->
+                    <div class="slide first">
+                        <img src="images/computer_mouse_keyboard_and_headphones-wallpaper-1280x720-01.jpeg" alt="" width="1000" height="600"> 
+                    </div>
+                    <div class="slide">
+                        <img src="images/upcomingevent1.jpg" alt="" width="1000" height="600">
+                    </div>
+                    <div class="slide">
+                        <img src="images/glimpses4.jpg" alt="" width="1000" height="600">
+                    </div>
+                    <div class="slide">
+                        <img src="images/glimpses2.jpg" alt="" width="1000" height="600">
+                    </div>
+                    <div class="slide">
+                        <img src="images/glimpses3.jpg" alt="" width="1000" height="600">
+                    </div>
+                    <!-- slide images end -->
+                    <!-- auto navigation start -->
+                    <div class="navauto">
+                        <div class="autobtn1"></div>
+                        <div class="autobtn2"></div>
+                        <div class="autobtn3"></div>
+                        <div class="autobtn4"></div>
+                        <div class="autobtn5"></div>
+                    </div>
+                    <!-- auto navigation end -->
+                </div>
+                <!-- mannual navigation start -->
+                <div class="navigation-mannual">
+                    <label for="radio1" class="mannualbtn"></label>
+                    <label for="radio2" class="mannualbtn"></label>
+                    <label for="radio3" class="mannualbtn"></label>
+                    <label for="radio4" class="mannualbtn"></label>
+                    <label for="radio5" class="mannualbtn"></label>
+                </div>
+            </div>
+            <!-- image slider end -->
+            <!-- auto slide javascript start -->
+            <script type="text/javascript">
+                var counter=2;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked=true;
+                    counter++;
+                    if(counter>5){
+                        counter=1;
+                    }
+                }, 5000);
+            </script>
+            <!-- auto slide javascript end -->
+            <div class="textbox">
+                <h2 class="textboxheading"> Our Objectives</h2>
+                <p>The esports and Gaming club is the youngest club of IIT Indore. It is by nature very different from other clubs in terms of the club culture,
+                    and that comes with its own set of perks and responsibilities. The club members are all determined to leave their mark on the gaming culture 
+                    of IITI and beyond. Our aim is to promote happy lifestyle far from depression and hectic schedule faced by students.
+                </p>
+                <h2 class="heading1" > Upcoming Events</h2>
+            </div>
+            <div class="upcomingevents">
+                <div class="uevents">
+                    <img src="images/upcomingevent1.jpg" height="50%" width="27%">
+                    <p class="utext">The Gaming Club brings you Summer Breeze, an offline Intra-IIT Valorant Tournament where teams of 5 will battle against each other.
+                        The twist is, adhering to the theme, the breeze map will be given a slight preference based on a coin toss! Full details will be shared later. Just make sure you practice ;).
+                        So,what are you waiting for?Check your mail to know full detail about the tournament.<br><br><a class="button">More info</a></p>
+        
+                </div>
+            </div>
+            <div class="section2">
+                <h2 class="heading2" >Past Events</h2>
+                <div class="pastevents">
+                    <div class="pevents">
+                        <img src="images/past event1.jpg" height="30%" width="30%">
+                        <p class="text">The Gaming Club proudly presented the FIRST EVER Inter-Branch BGMI Tournament which was held on 17th Feb.<br><br><a class="button">More info</a></p>
+                    </div>
+                    <div class="pevents">
+                        <img src="images/past event2.jpg" height="30%" width="30%">
+                        <p class="text">The Gaming Club hosted the CSGO tournament for IBCC on March 20, in which participants from all branches showcased their talent.<br><br><a class="button">More info</a></p>
+                    </div>
+                    <div class="pevents">
+                        <img src="images/past event3.jpg" height="30%" width="30%">
+                        <p class="text">The Gaming Club hosted the " Rocket League Tournament " in which you had to make a team of 2 and get ready to GOAL.<br><br><a class="button">More info</a></p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading2">Members</h2>
+            <div class="members">
+                <div class="founders">
+                    <div class="founder1">
+                        <img src="images/dheerajbansal.png" height="140vh" width="140vw">
+                        <p class="names">DHEERAJ BANSAL</p>
+                    </div>
+                    <div class="founder1">
+                        <div class="h3"><h3>FOUNDERS</h3></div>
+                    </div>
+                    <div class="founder1">
+                        <img src="images/jemin.png" height="140vh" width="140vw">
+                        <p class="names">JEMIN VAGADIA</p>
+                    </div>
+                </div>
+                <hr width="60%" size="2px" color="grey">
+                <div class="clubhead">
+                    <div class="clubhead1">
+                        <div class="h3"><h3>CLUBHEAD</h3></div>
+                    </div>
+                    <div class="clubhead1">
+                        <img src="images/amardeep.png" height="140vh" width="140vw">
+                        <p class="names">AMERDEEP MANOHAR PAIDALWAR</p>
+                    </div>
+                </div>
+                <hr width="60%" size="2px" color="grey">
+                <div class="gamedev">
+                    <div class="gamedev2">
+                        <div class="h3"><h3>GAME DEVELOPMENT TEAM</h3></div>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/kushal.png" height="100vh" width="100vw">
+                        <p class="names">KUSHAL SINGH<br><div class="head">(HEAD)</div></p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/rajat.png" height="100vh" width="100vw">
+                        <p class="names">RAJAT KUSHWAHA</p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/srijan.png" height="100vh" width="100vw">
+                        <p class="names">SRIJAN PARASHAR</p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/stacy.png" height="100vh" width="100vw">
+                        <p class="names">STACY HEROLD</p>
+                    </div>
+                </div>
+                <hr width="60%" size="2px" color="grey">
+                <div class="gamedev">
+                    <div class="gamedev2">
+                        <div class="h3"><h3>WEB AND APP DEVELOPMENT TEAM</h3></div>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/suman.png" height="100vh" width="100vw">
+                        <p class="names">SUMAN JAISWAL<br><div class="head">(HEAD)</div></p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/manisha.png" height="100vh" width="100vw">
+                        <p class="names">MANISHA DEVI</p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/omkar.png" height="100vh" width="100vw">
+                        <p class="names">OMKAR SHIRGAONKAR</p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/amarnath.png" height="100vh" width="100vw">
+                        <p class="names">AMARNATH</p>
+                    </div>
+                </div>
+                <hr width="60%" size="2px" color="grey">
+                <div class="gamedev">
+                    <div class="gamedev2">
+                        <div class="h3"><h3>CREATIVE TEAM</h3></div>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/aryan.png" height="100vh" width="100vw">
+                        <p class="names">ARYAN YADAV<br><div class="head">(HEAD)</div></p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/yash.png" height="100vh" width="100vw">
+                        <p class="names">YASH KUMAR</p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/ayush.png" height="100vh" width="100vw">
+                        <p class="names">AYUSH MAHESHWARI</p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/nachiket.png" height="100vh" width="100vw">
+                        <p class="names">NACHIKET SOLANKI</p>
+                    </div>
+                </div>
+                <hr width="60%" size="2px" color="grey">
+                <div class="market">
+                    <div class="market2">
+                        <div class="h3"><h3>MARKETING AND SPONSORSHIP TEAM</h3></div>
+                    </div>
+                    <div class="market1">
+                        <img src="images/jay.png" height="100vh" width="100vw">
+                        <p class="names">JAY VIRADIYA</p>
+                    </div>
+                    <div class="market1">
+                        <img src="images/sshrevesh.png" height="100vh" width="100vw">
+                        <p class="names">S SHREVESH</p>
+                    </div>
+                    <div class="market1">
+                        <img src="images/prakhar.png" height="100vh" width="100vw">
+                        <p class="names">PRAKHAR GAUTAM</p>
+                    </div>
+                    <div class="market1">
+                        <img src="images/sohail.png" height="100vh" width="100vw">
+                        <p class="names">SOHAIL SHAIKH</p>
+                    </div>
+                    <div class="market1">
+                        <img src="images/vimal.png" height="100vh" width="100vw">
+                        <p class="names">VIMAL TATIYA</p>
+                    </div>
+                    <div class="market1">
+                        <img src="images/khushi.png" height="100vh" width="100vw">
+                        <p class="names">KHUSHI GUPTA</p>
+                    </div>
+                </div>
+                <hr width="60%" size="2px" color="grey">
+                <div class="esports">
+                    <div class="esports2">
+                        <div class="h3"><h3>E-SPORTS TEAM</h3></div>
+                    </div>
+                    <div class="esports1">
+                        <img src="images/sahil.png" height="100vh" width="100vw">
+                        <p class="names">SAHIL RAPARTIWAR<br><div class="head">(HEAD)</div></p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/bhavya.png" height="100vh" width="100vw">
+                        <p class="names">BHAVYA SINGH THAKUR</p>
+                    </div>
+                    <div class="gamedev1">
+                        <img src="images/govind.png" height="100vh" width="100vw">
+                        <p class="names">GOVIND KM</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer>
+            <nav>
+                <div class="row1">
+                    <h4>Quick Links</h4>
+                    <div class="quicllinks"><a href="">Home</a></div>
+                    <div class="quicllinks"><a href="">About</a></div>
+                    <div class="quicllinks"><a href="">Log-in</a></div>
+                </div>
+                <div class="row1">
+                    <h4>Connect</h4>
+                    <div class="connect"><a href="">Contact-us</a></div>
+                    <div class="connect"><a href="">Suggestions</a></div>
+                    <div class="connect"><a href="">Members</a></div>
+
+                </div>
+                <div class="row3">
+                    <h4>Follow us on</h4>
+                    <div class="follow"><img src="images/icons8-facebook-480.png" height="70" width="70"></div>
+                    <div class="follow"><img src="images/icons8-instagram-480.png" height="70" width="70"></div>
+                    <div class="follow"><img src="images/icons8-linkedin-circled-480.png" height="70" width="70"></div>
+                    <div class="follow"><img src="images/icons8-youtube-480.png" height="70" width="70"></div>
+                </div>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

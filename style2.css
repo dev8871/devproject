@@ -1,0 +1,586 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background: rgb(59, 57, 57);
+    color: white;
+    width: 100%;
+}
+#page{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 0.97fr;
+    justify-items: center;
+    margin-right: -1%;
+}
+header, footer{
+    background: rgb(34, 32, 32);
+    padding: 20px 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+/* css for header strt */
+header,h1,.navigation{
+    display: inline-block;
+    top: 0;
+}
+h1{
+    width: 42%;
+    margin: 1%;
+    margin-bottom: 2%;
+    font-size: 45px;
+    color: #00ff84;
+}
+#iit{
+    color: white;
+    display: inline;
+}
+header .menu{
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.girl{
+    clip-path: circle();
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.menu{
+    transition: 0.3s;
+}
+.menu:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(34, 32, 32) ;
+    border-radius: 5px;
+}
+.navigation{
+    width: 45%;
+    text-align: right;
+    padding-left: 2%;
+}
+.newheadimg{
+    display: none;
+}
+#check{
+    z-index: 3;
+    display: none;
+}
+.newhead{
+    display: inline;
+}
+@media (max-width:1025px){
+    h1{
+        width: 60%;
+    }
+    header .navigation{
+        display: none;
+    }
+    .newheadimg{
+        display: inline;
+        margin-left: 20%;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .newheadimg img{
+        transition: 0.5s;
+
+    }
+    .newheadimg img:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    .close{
+        display: none;
+    }
+    header{
+        height: 15vh;
+    }
+    #check:checked ~ header .navigation{
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        color: white;
+        background: rgba(34, 32, 32, 0.836);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #check:checked ~ header .navigation a{
+        font-weight: 600;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    #check:checked ~ header .newheadimg .menubar{
+        display: none;
+    }
+    #check:checked ~ header .newheadimg .close{
+        z-index: 3;
+        background: rgba(34, 32, 32, 0.836);
+        display: inline;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 5px;
+
+        
+    }
+
+    
+}
+
+/* css for header end */
+
+
+/* css for slider strt */
+.slider{
+    width: 80%;
+    height: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 15%;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 3s;
+}
+.slide img{
+    width: 80%;
+    height: 60%;
+    margin-left: 20%;
+    margin-top: 3%;
+    margin-bottom: -10%;
+}
+/* css for slider end */
+
+
+/*css for mannual slide navigator strt */
+.navigation-mannual{
+    position: absolute;
+    width: 65%;
+    margin-top: -20%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+}
+.mannualbtn{
+    border:1.7px solid #00ff84;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.mannualbtn:not(:last-child){
+    margin-right: 5% ;
+}
+.mannualbtn:hover{
+    background: #00ff84;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+/*css for mannual slide navigator end */
+
+
+/* css for automatic navigation start */
+.navauto{
+    position: absolute;
+    display: none;
+    width: 65%;
+
+}
+.navauto div{
+   border: 1.7px solid #00ff84; 
+   padding: 5px;
+   border-radius: 10px;
+   transition: 0.8s;
+}
+/* css for automatic navigation end */
+
+
+/*css for textbox strt */
+.textbox h2{
+    color: #00ff84;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.textboxheading::after{
+    content: '';
+    height: 1.5px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+.textbox{
+    margin-top: -18%;
+    width: 95%;
+    margin-left: 4%;
+}
+/* css for textbox end */
+
+
+/* css for upcoming events section strt */
+.heading1{
+    color: #00ff84;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+}
+.heading1::after{
+    content: '';
+    height: 1.5px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+.upcomingevents{
+    background: rgb(34, 32, 32);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: 0.6s;
+}
+.upcomingevents:hover{
+    transform: scale(1.05);
+    z-index: 2;
+}
+.uevents{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 90%;
+}
+.upcomingevents img{
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+}
+.utext{
+    display: inline;
+    float: right;
+    width: 60%;
+    padding: auto;
+    margin-top: 3%;
+}
+
+.button{
+    font-size: 1.1em;
+    background: #22d780;
+    border-radius: 5px;
+    float: left;
+    width: 35%;
+    height: 10%;
+    text-align: center;
+}
+.button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(34, 32, 32) ;
+}
+/* css for upcoming events section end */
+
+
+/* css for past events section strt */
+.section2{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.heading2{
+    color: #00ff84;
+    margin-left: 3%;
+    font-size: 30px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.heading2::after{
+    content: '';
+    height: 1.5px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+.pastevents{
+    background: rgb(34, 32, 32);
+    width: 60%;
+    margin-left: auto;
+    margin-right: 10%;
+    height: 25%;
+    border-radius: 10px;
+    float: right;
+}
+.pevents{
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 2%;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 90%;
+    transition: 0.6s;
+}
+.pevents img{
+    border-radius: 5px;
+}
+.pevents:hover{
+    transform: scale(1.05);
+    z-index: 2;
+}
+.text{
+    display: inline;
+    float: right;
+    width: 60%;
+    margin-left: -4%;
+    padding-right: 5%;
+}
+/* css for past events section end */
+
+
+/* CSS for members section */
+.h3{
+    background: #ffffff;
+    color: rgb(34, 32, 32);
+    width: 120%;
+    padding: auto;
+    border-radius: 7px;
+    margin-right: 30%;
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 1px;
+}
+.members{
+    display: grid;
+    grid-gap: 10px;
+    width: 90%;
+    justify-items: center;
+    background: rgb(34, 32, 32);
+    border-radius: 10px;
+    border: 1.5px solid white;
+    margin-left: 50px;
+}
+.founders{
+    width: 90%;
+    height: 40vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.founder1{
+    width: 45%;
+}
+.clubhead{
+    width: 60%;
+    height: 40vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows:  0.25fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.clubhead img{
+    margin-left: 25%;
+}
+.gamedev{
+    width: 90%;
+    height: 40vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:  0.25fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.gamedev img{
+    margin-left: 10px;
+}
+
+.gamedev2{
+    grid-area: 1/1/2/5;
+}
+.head{
+    text-align: center;
+    margin-top: -20px;
+}
+.market{
+    width: 70%;
+    height: 55vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  0.25fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.market2{
+    grid-area: 1/1/2/4;
+}
+.market img{
+    margin-left: 10px;
+}
+
+.esports{
+    width: 70%;
+    height: 40vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  0.25fr 1fr ;
+    align-items: center;
+    justify-items: center;
+}
+.esports2{
+    grid-area: 1/1/2/4;
+}
+.esports img{
+    margin-left: 20px;
+}
+.names{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* css for footer strt*/
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: center;
+}
+
+.follow{
+    display: inline-block;
+}
+h4{
+    color: #00ff84;
+}
+.follow img{
+    transition: 1s;
+}
+.follow img:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.quicllinks:hover{
+    color: #00ff84;
+}
+.connect:hover{
+    color: #00ff84;
+
+}
+a:hover{
+    color: #00ff84;
+
+}
+/* css for footer end*/
+
+/* media queries */
+@media (max-width:945px){
+    .upcomingevents{
+        width: 50%;
+    }
+    .uevents{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+        grid-gap: 3px;
+        justify-items: center;    
+    }
+    .utext{
+        width: 90%;
+    }
+    .uevents img{
+        width: 60%;
+        height: 80%;
+    }
+    .pastevents{
+        height: 35%;
+        width: 55%;
+    }
+    
+    .pevents{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.75fr;
+        grid-gap: 3px;
+        justify-items: center;
+        text-align: center;
+    }
+    .text{
+        width: 80%; 
+    }
+    .pevents img{
+        width: 250px;
+        height: 250px;
+    }
+    .pevents .button{
+        height: 27px;
+    }
+
+}
+@media (max-width:880px){
+    h1{
+        width: 50%;
+        font-size: 35px;
+    }
+    nav{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .row3{
+        grid-area: 2/1/3/3;
+        text-align: center;
+    }
+    .founder1{
+        width: 55%;
+    }
+
+}
+@media(max-width:660px){
+    .button{
+        width: 50%;
+    }
+}
+
+
